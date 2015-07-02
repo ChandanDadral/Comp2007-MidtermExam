@@ -1,0 +1,91 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="Comp2007_MidtermExam.MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+     <link href="Content/bootstrap.css" rel="stylesheet" />
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
+
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="PageWrapper">
+
+            <nav class="navbar navbar-inverse  navbar-static-top">
+                <div class="container-fluid">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" rel="home" href="Default.aspx" title="Buy Sell Rent Everyting">
+                            <img style="max-width: 100px; margin-top: -12px;"
+                                src="Assets/images/school.png" />
+                        </a>
+                    </div>
+                    <!-- navbar-header -->
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li><a href="Default.aspx">Home</a></li>
+                           
+                        </ul>
+                        <!-- nav navbar-nav -->
+                    </div>
+                    <!-- /.navbar-collapse -->
+                </div>
+                <!-- container-fluid -->
+            </nav>
+            <!-- navbar navbar-default -->
+
+            <section id="MainContent">
+                <asp:ContentPlaceHolder ID="cpMainContent" runat="server"></asp:ContentPlaceHolder>
+            </section>
+            <!--Footer of Website-->
+
+            <footer class="container-fluid">
+                <nav class="nav navbar-inverse navbar-static-bottom navbar-fixed-bottom">
+
+                    <h4 class="navbar-text">&copy; Copyright   <%= DateTime.Now %>  by Chandan Dadral</h4>
+                    <!--Social NEtworking Links -->
+                    <div class="col-md-6 pull-right">
+                        <ul class="list-inline social-buttons pull-right btn-lg">
+                            <!--Links for Social Networking -->
+                            <li><a href="https://github.com/ChandanDadral"><i class="fa fa-github"></i></a></li>
+                            <li><a href="https://twitter.com/?lang=en"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="https://www.linkedin.com/profile/view?id=318014756&authType=NAME_SEARCH&authToken=BWAb&locale=en_US&srchid=3180147561427684019507&srchindex=1&srchtotal=4&trk=vsrp_people_res_name&trkInfo=VSRPsearchId%3A3180147561427684019507%2CVSRPtargetId%3A318014756%2CVSRPcmpt%3Aprimary%2CVSRPnm%3A"><i class="fa fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+
+                </nav><!--navbar ends here-->
+            </footer>
+            <!--Footer Ends Here-->
+        </div>
+        <!--Page Wrapper Ends Here-->
+    </form>
+
+    <!-- Javascript Links -->
+    <script src="Scripts/bootstrap.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="Scripts/jquery-1.9.1.js"></script>
+    <script src="Scripts/jquery-1.9.1.min.js"></script>
+     <script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+</body>
+</html>
