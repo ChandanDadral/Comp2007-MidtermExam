@@ -32,9 +32,8 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand" rel="home" href="Default.aspx" title="Buy Sell Rent Everyting">
-                            <img style="max-width: 100px; margin-top: -12px;"
-                                src="Assets/images/school.png" />
+                        <a class="navbar-brand" rel="home" href="Default.aspx" title="Course Database">
+                            Course Database
                         </a>
                     </div>
                     <!-- navbar-header -->
@@ -52,6 +51,7 @@
                 <!-- container-fluid -->
             </nav>
             <!-- navbar navbar-default -->
+
 
             <section id="MainContent">
                 <asp:ContentPlaceHolder ID="cpMainContent" runat="server"></asp:ContentPlaceHolder>
